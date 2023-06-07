@@ -9,7 +9,5 @@ export const authFeatureSelector = createFeatureSelector<
 
 export const isSubmittingSelector = createSelector(
   authFeatureSelector,
-  (authState: AuthStateInterface) => {
-    authState.isSubmitting;
-  }
-);
+  (authState: AuthStateInterface) => authState.isSubmitting
+)
